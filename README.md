@@ -43,6 +43,14 @@ services:
       - 8080:80
     volumes:
       - ./wordpress:/var/www/html
+
+```
+### Databse Location 
+
+The sqlite database is stored in the following area
+
+```
+wordpress/wp-content/database/.ht.sqlite
 ```
 
 Save the file as `docker-compose.yml` and then execute `docker compose up`, then use browser access to `localhost:8080`.
@@ -50,3 +58,4 @@ Save the file as `docker-compose.yml` and then execute `docker compose up`, then
 ![](.github/ready-to-use.jpg)
 
 Use the quick 1-minute initial installation, enjoy.
+
